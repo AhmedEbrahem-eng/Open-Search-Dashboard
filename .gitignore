@@ -1,0 +1,23 @@
+# Large database dumps
+DB
+*.dmp
+*.bak
+
+# Environment and secrets
+.env
+.env.local
+*.env
+
+# Logstash runtime tracking state
+logstash/jdbc_last_run/*
+!logstash/jdbc_last_run/.gitkeep
+
+# Logs and temporary files
+*.log
+scratch/
+__pycache__/
+*.pyc
+
+# OS metadata
+.DS_Store
+Thumbs.db
