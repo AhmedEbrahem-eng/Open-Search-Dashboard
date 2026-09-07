@@ -1,6 +1,6 @@
-# OpenSearch Dashboard POC — EOC Live Metrics
+# OpenSearch Dashboard POC
 
-Real-time telemetry and order lifecycle monitoring for Enterprise Order Management (EOC) powered by **OpenSearch**, **Logstash**, and **OpenSearch Dashboards**.
+Real-time telemetry and order lifecycle monitoring powered by **OpenSearch**, **Logstash**, and **OpenSearch Dashboards**.
 
 ---
 
