@@ -30,29 +30,6 @@ Real-time telemetry and order lifecycle monitoring powered by **OpenSearch**, **
 
 ---
 
-## 📁 Repository Structure
-
-```
-.
-├── docker-compose.yml              # Multi-node OpenSearch, Dashboards, and Logstash cluster
-├── .env.example                    # Sample environment variables
-├── .gitignore                      # Excludes runtime state, secrets, and large dumps
-├── dashboards/
-│   ├── saved_objects.ndjson        # Exported Dashboards, Index Patterns, and Visualizations
-│   └── import_dashboards.ps1       # Script to import saved objects across tenants (Global / Admin)
-├── logstash/
-│   ├── config/
-│   │   └── logstash.yml            # Logstash configuration
-│   ├── drivers/
-│   │   └── ojdbc8.jar              # Oracle JDBC driver
-│   ├── jdbc_last_run/              # Timestamp tracking metadata
-│   └── pipeline/
-│       └── eoc-orders.conf         # Main ingestion and transformation pipeline
-└── README.md
-```
-
----
-
 ## 🚀 Getting Started
 
 ### 1. Environment Configuration
