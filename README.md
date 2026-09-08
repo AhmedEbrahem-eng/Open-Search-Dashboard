@@ -5,14 +5,6 @@ Real-time telemetry and order lifecycle monitoring powered by **OpenSearch**, **
 ---
 
 ## 🏛️ Architecture Overview
-
-```mermaid
-graph LR
-    OracleDB[(Oracle DB<br/>CWORDERINSTANCE)] -->|JDBC Polling & Tracking<br/>NVL(LASTUPDATEDDATE, CREATIONDATE)| Logstash[Logstash Pipeline<br/>eoc-orders.conf]
-    Logstash -->|Document Upsert<br/>@timestamp = CREATIONDATE| OpenSearch[(OpenSearch 2.x<br/>Index: eoc-orders)]
-    OpenSearch -->|Dynamic Aggregations & Queries| Dashboards[OpenSearch Dashboards<br/>Executive Snapshot]
-```
-
 1. **Oracle Database**: Stores order instance records in `CWORDERINSTANCE`.
 2. **Logstash Pipeline (`eoc-orders.conf`)**:
    - Incremental polling using JDBC input.
