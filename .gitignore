@@ -18,6 +18,8 @@ logstash/jdbc_last_run/*
 scratch/
 __pycache__/
 *.pyc
+PROJECT_DOCUMENTATION.md
+Backup/
 
 # OS metadata
 .DS_Store
