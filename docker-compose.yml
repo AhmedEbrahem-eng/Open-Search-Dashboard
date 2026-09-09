@@ -70,7 +70,7 @@ services:
     environment:
       - ORACLE_PASSWORD=${ORACLE_PASSWORD}
       - OPENSEARCH_INITIAL_ADMIN_PASSWORD=${OPENSEARCH_INITIAL_ADMIN_PASSWORD}
-      - LS_JAVA_OPTS=-Xms256m -Xmx256m
+      - LS_JAVA_OPTS=-Xms512m -Xmx1024m
     depends_on:
       - opensearch-node1
       - opensearch-node2
