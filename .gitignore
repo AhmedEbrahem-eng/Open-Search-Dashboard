@@ -20,6 +20,8 @@ __pycache__/
 *.pyc
 PROJECT_DOCUMENTATION.md
 Backup/
+EOC_SCHEMA_CHEATSHEET V1.8.html
+dashboards/
 
 # OS metadata
 .DS_Store
